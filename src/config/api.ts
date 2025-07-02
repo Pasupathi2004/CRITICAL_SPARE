@@ -5,7 +5,7 @@ const getApiUrl = () => {
     return 'http://localhost:3001/api';
   }
   
-  // Production - use environment variable
+  // Production - use environment variable or fallback to localhost
   return import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 };
 
