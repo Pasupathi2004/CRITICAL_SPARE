@@ -1,11 +1,5 @@
 // API Configuration for different environments
 const getApiUrl = () => {
-  // Development
-  if (import.meta.env.DEV) {
-    return 'http://localhost:3001/api';
-  }
-  
-  // Production - use environment variable or fallback to localhost
   return import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 };
 
